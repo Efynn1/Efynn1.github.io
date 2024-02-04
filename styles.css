@@ -16,8 +16,11 @@ nav {
     background: #0082e6;
     height: 80px;
     width: 100%;
-    position: relative; /* Add this line */
+    position: fixed; /* Change to fixed */
+    top: 0; /* Adjust this value as needed */
+    z-index: 1000; /* add this line */
 }
+
 
 label.logo {
     color: white;
