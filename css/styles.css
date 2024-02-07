@@ -34,27 +34,31 @@ body {
 }
 
 nav {
-    background: #0082e6;
+    background: rgba(92, 131, 238, 0.5); /* Use rgba for transparency */
+    backdrop-filter: blur(5px); /* Add backdrop-filter for blur effect */
     height: 60px;
     width: 100%;
-    position: fixed; /* Change to fixed */
-    top: 0; /* Adjust this value as needed */
-    z-index: 1000; /* add this line */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 label.logo {
     color: white;
     font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 nav ul {
     float: right;
     margin-right: 20px;
 }
+
 
 nav ul li {
     display: inline-block;
