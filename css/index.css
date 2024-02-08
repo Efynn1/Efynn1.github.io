@@ -63,16 +63,34 @@ main .main-quotes {
 .index-category {
     width: 100%;
     padding: 60px 0;
-    background-color: #fff;
+    background-color: #152035;
     display: flex;
     justify-content: center;
     column-gap: 20px;
     row-gap: 20px;
     flex-wrap: wrap;
+    position: relative; /* Add position relative */
+    z-index: 100;
 }
 
-.index-category  p{
-    color: #111;
+.index-category:before {
+    content: ""; /* Create a pseudo-element for the blurred background */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/cubes.png); /* Set the background image */
+    background-size: auto; /* Adjust the values accordingly */
+    background-repeat: repeat;
+    background-position: center;
+    filter: blur(8px); /* Add the blur effect to the background */
+    -webkit-filter: blur(4px);
+    z-index: -1; /* Send the pseudo-element to the back */
+}
+
+.index-category > p {
+    color: white;
     text-align: center;
     padding: 40px;
     flex-basis: 100%;
@@ -89,7 +107,8 @@ main .main-quotes {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    z-index: 150;
+    position: relative; /* Add position relative */
 }
 
 .index-category-box:nth-child(2) {
@@ -109,8 +128,8 @@ main .main-quotes {
 }
 
 .index-category-box:hover {
-    transform: scale(1.1); /* Adjust the scale factor as needed */
-    transition: transform 0.3s ease; /* Adjust the transition duration and easing as needed */
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .index-category-box h3 {
@@ -118,11 +137,11 @@ main .main-quotes {
     text-shadow: -2px 2px 4px #000;
     line-height: 28px;
     font-size: 22px;
-    transition: color 0.3s ease; /* Add transition for color change */
+    transition: color 0.3s ease;
 }
 
 .index-category-box:hover h3 {
-    color: var(--site-colour-01-hover); /* Change color on hover */
+    color: var(--site-colour-01-hover);
 }
 
 /* RESPONSIVENESS */
