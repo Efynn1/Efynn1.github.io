@@ -3,7 +3,7 @@ main {
     height: calc(100vh - 60px);
     background-color: #152035;
     margin-top: 60px;
-    background-image: url(../images/Shadow-Me.png), url(../images/cubes.png);
+    background-image: url(), url(../images/cubes.png);
     background-size: 90vh, auto; /* Adjust the values accordingly */
     background-repeat: no-repeat, repeat;
     background-position: bottom, center;
@@ -54,6 +54,7 @@ main .main-quotes {
     position: relative;
     left: 15vh;
     padding-bottom: 8vh;
+    Display: block;
 }
 
 
@@ -66,6 +67,7 @@ main .main-quotes {
     display: flex;
     justify-content: center;
     column-gap: 20px;
+    row-gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -91,26 +93,72 @@ main .main-quotes {
 }
 
 .index-category-box:nth-child(2) {
-    background-image: url(j);
+    background-image: url(../images/webdevelopment-sc.png);
 }
 
 .index-category-box:nth-child(3) {
-    background-image: url(j);
+    background-image: url(../images/football-app-sc.png);
 }
 
 .index-category-box:nth-child(4) {
-    background-image: url(j);
+    background-image: url(../images/Game-sc.png);
 }
 
 .index-category-box:nth-child(5) {
-    background-image: url(j);
+    background-image: url(../images/3d-model-sc.png);
 }
 
-
+.index-category-box:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Adjust the transition duration and easing as needed */
+}
 
 .index-category-box h3 {
     text-align: center;
     text-shadow: -2px 2px 4px #000;
     line-height: 28px;
     font-size: 22px;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.index-category-box:hover h3 {
+    color: var(--site-colour-01-hover); /* Change color on hover */
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1000px) {
+    main {
+        background-image: url(), url(../images/cubes.png);
+    }
+
+    .main-intro {
+        text-align: center; /* Center align the text within .main-intro */
+    }
+    
+    .button {
+        display: inline-block; /* Make it a block-level element */
+        background-color: var(--site-colour-01);
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        width: fit-content;
+        margin-top: 30px;
+    }
+
+    main .main-intro {
+        position: relative;
+        right: 0vh;
+        padding-bottom: 0vh;
+    }
+    
+    main .main-quotes {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    main .main-quotes {
+        display: none;
+    }
 }
