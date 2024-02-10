@@ -3,6 +3,7 @@
     --site-colour-01-hover: #5e88a5;
 }
 
+
 h1 {
     font-size: 26px;
     line-height: 32px;
@@ -31,10 +32,17 @@ body {
     padding: 0;
     background: #152035;
     text-align: center;
+    background-image: url(../images/cubes.png);
+    /* Set the background image */
+    background-size: auto;
+    /* Adjust the values accordingly */
+    background-repeat: repeat;
+    background-position: center;
 }
 
+
 nav {
-    background: rgba(92, 131, 238, 0.5);
+    background: rgba(255, 255, 255, 0);
     /* Use rgba for transparency */
     backdrop-filter: blur(5px);
     /* Add backdrop-filter for blur effect */
@@ -74,15 +82,13 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-a.active,
-a.url:hover {
+a.active, a.url:hover {
     background: white;
     transition: .5s;
 }
 
 a:visited {
     color: white;
-    /* Set the color you want for visited links */
 }
 
 .checkbtn {
@@ -155,6 +161,8 @@ a:visited {
     width: 100%;
 }
 
+
+
 .img-banner {
     display: none;
 }
@@ -188,6 +196,13 @@ a:visited {
         display: block;
         width: 100%;
         padding-bottom: 30px;
+    }
+
+    body {
+        background-image: url(../images/cubes.png); /* Set the background image */
+        background-size: auto; /* Adjust the values accordingly */
+        background-repeat: repeat;
+        background-position: center;
     }
 
 

@@ -1,8 +1,8 @@
 main {
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     background-color: #152035;
-    margin-top: 60px;
+    margin-top: 0px;
     background-image: url(), url(../images/cubes.png);
     background-size: 90vh, auto; /* Adjust the values accordingly */
     background-repeat: no-repeat, repeat;
@@ -143,6 +143,8 @@ main .main-quotes {
 .index-category-box:hover h3 {
     color: var(--site-colour-01-hover);
 }
+
+
 
 /* RESPONSIVENESS */
 @media only screen and (max-width: 1000px) {
