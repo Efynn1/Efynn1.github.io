@@ -57,6 +57,17 @@ main .main-quotes {
     Display: block;
 }
 
+.button {
+    display: inline-block;
+    background-color: var(--site-colour-01);
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 30px;
+}
+
 
 /* CATEGORY SECTION */
 
@@ -108,7 +119,7 @@ main .main-quotes {
     justify-content: center;
     align-items: center;
     z-index: 150;
-    position: relative; /* Add position relative */
+    position: relative;
 }
 
 .index-category-box:nth-child(2) {
@@ -157,7 +168,7 @@ main .main-quotes {
     }
     
     .button {
-        display: inline-block; /* Make it a block-level element */
+        display: inline-block;
         background-color: var(--site-colour-01);
         padding: 10px 20px;
         font-size: 18px;

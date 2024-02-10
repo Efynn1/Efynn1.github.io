@@ -16,7 +16,7 @@ h1 {
 p {
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
+    color: white;
     font-family: Roboto;
 }
 
@@ -33,9 +33,7 @@ body {
     background: #152035;
     text-align: center;
     background-image: url(../images/cubes.png);
-    /* Set the background image */
     background-size: auto;
-    /* Adjust the values accordingly */
     background-repeat: repeat;
     background-position: center;
 }
@@ -156,11 +154,14 @@ a:visited {
     }
 }
 
-
+/* Wrapper styling */
 .wrapper {
     width: 100%;
 }
 
+.wrapper article h2, .wrapper article p{
+    color: white;
+}
 
 
 .img-banner {
