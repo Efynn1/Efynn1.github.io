@@ -38,6 +38,36 @@ body {
     background-position: center;
 }
 
+/* FOOTER */
+.footer {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #152035;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    position: relative; /* Add position relative */
+    z-index: 100;
+}
+
+.footer:before {
+    content: ""; /* Create a pseudo-element for the blurred background */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/cubes.png); /* Set the background image */
+    background-size: auto; /* Adjust the values accordingly */
+    background-repeat: repeat;
+    background-position: center;
+    filter: blur(8px); /* Add the blur effect to the background */
+    -webkit-filter: blur(4px);
+    z-index: -1; /* Send the pseudo-element to the back */
+}
+
 
 nav {
     background: rgba(255, 255, 255, 0);
