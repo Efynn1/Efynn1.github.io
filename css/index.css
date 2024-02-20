@@ -3,10 +3,10 @@ main {
     height: calc(100vh);
     background-color: #152035;
     margin-top: 0px;
-    background-image: url(), url(../images/cubes.png);
-    background-size: 90vh, auto; /* Adjust the values accordingly */
+    background-image: url(../images/GradPic.png), url(../images/cubes.png);
+    background-size: 1512px 2016px, auto; /* Adjust the values accordingly */
     background-repeat: no-repeat, repeat;
-    background-position: bottom, center;
+    background-position: 500px 0px, center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,7 @@ main .main-intro h1 {
 main p {
     font-size: 18px;
     line-height: 30px;
+    margin-left: 0px;
 }
 
 main a {
