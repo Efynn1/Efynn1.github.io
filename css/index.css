@@ -3,10 +3,10 @@ main {
     height: calc(100vh);
     background-color: #152035;
     margin-top: 0px;
-    background-image: url(../images/GradPic.png), url(../images/cubes.png);
-    background-size: 1512px 2016px, auto; /* Adjust the values accordingly */
+    background-image: url(../images/GradPic-edit.png), url(../images/cubes.png);
+    background-size: 60vh, auto; /* Adjust the values accordingly */
     background-repeat: no-repeat, repeat;
-    background-position: 0px 0px, center;
+    background-position: bottom, center;
     display: flex;
     justify-content: center;
     align-items: center;
