@@ -6,7 +6,7 @@ main {
     background-image: url(../images/GradPic.png), url(../images/cubes.png);
     background-size: 1512px 2016px, auto; /* Adjust the values accordingly */
     background-repeat: no-repeat, repeat;
-    background-position: 500px 0px, center;
+    background-position: 0px 0px, center;
     display: flex;
     justify-content: center;
     align-items: center;
