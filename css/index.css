@@ -47,13 +47,13 @@ main .main-quotes p:nth-child(2) {
 
 main .main-intro {
     position: relative;
-    right: 10vh;
+    margin-right: 20vh;
     padding-bottom: 8vh;
 }
 
 main .main-quotes {
+    left: 20vh;
     position: relative;
-    left: 30vh;
     padding-bottom: 8vh;
     Display: block;
 }
