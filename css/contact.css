@@ -1,0 +1,65 @@
+main {
+    width: 100%;
+    height: calc(100vh);
+    background-color: #152035;
+    margin-top: 0px;
+    background-image: url(), url(../images/cubes.png);
+    background-size: 90vh, auto; /* Adjust the values accordingly */
+    background-repeat: no-repeat, repeat;
+    background-position: bottom, center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+main .main-intro {
+    text-align: center; /* Center align text */
+    padding-bottom: 8vh;
+}
+
+main .main-intro h1 {
+    font-size: 96px;
+    line-height: 106px;
+    margin-bottom: 20px; /* Add margin to create space between h1 and other elements */
+}
+
+main .main-quotes {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+main .main-quotes p {
+    border-left: 4px solid var(--site-colour-01);
+    border-right: 4px solid var(--site-colour-01);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    margin-bottom: 10px; /* Add margin between email and download link */
+}
+
+main a.button {
+    font-size: 18px;
+    display: block;
+    background-color: var(--site-colour-01);
+    padding: 10px 20px; /* Fix padding syntax */
+    width: fit-content;
+}
+
+
+/* Mail link styling */
+
+main .main-intro h1 a {
+    color: white;
+    text-transform: uppercase;
+}
+
+a.active, a.url:hover {
+    background: white;
+    transition: .5s;
+}
+
+a:visited {
+    color: white;
+}
